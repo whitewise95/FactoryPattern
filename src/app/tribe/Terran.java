@@ -1,4 +1,4 @@
-package java.tribe;
+package app.tribe;
 
 public class Terran extends Tribe {
 
