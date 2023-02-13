@@ -1,7 +1,6 @@
-package app.tribe;
+package app.tribes;
 
-public class Terran extends Tribe {
-
+public class Zerg extends Tribe{
 	/**
 	 * 미네랄
 	 */
@@ -32,13 +31,13 @@ public class Terran extends Tribe {
 	 */
 	private String name;
 
-	public Terran() {
+	public Zerg() {
 		this.mineral = 0;
-		this.gas = 4;
+		this.gas = 0;
 		this.currentPopulation = 4;
-		this.maxPopulation = 8;
+		this.maxPopulation = 9;
 		this.workmanCnt = 4;
-		this.name = "테란";
+		this.name = "저그";
 	}
 
 	@Override
@@ -58,31 +57,31 @@ public class Terran extends Tribe {
 
 	@Override
 	public Integer getMineral() {
-		return mineral;
+		return this.mineral;
 	}
 
 	@Override
 	public Integer getGas() {
-		return gas;
+		return this.gas;
 	}
 
 	@Override
 	public Integer getCurrentPopulation() {
-		return currentPopulation;
+		return this.currentPopulation;
 	}
 
 	@Override
 	public Integer getMaxPopulation() {
-		return maxPopulation;
+		return this.maxPopulation;
 	}
 
 	@Override
 	public Integer getWorkmanCnt() {
-		return workmanCnt;
+		return this.workmanCnt;
 	}
 
 	@Override
 	public String getName() {
-		return name;
+		return this.name;
 	}
 }

@@ -1,7 +1,9 @@
-package app.factory;
+package app.factorys;
 
-import app.tribe.Terran;
-import app.tribe.Tribe;
+import app.tribes.Protos;
+import app.tribes.Terran;
+import app.tribes.Tribe;
+import app.tribes.Zerg;
 
 public class TribeFactory {
 
@@ -13,6 +15,10 @@ public class TribeFactory {
 		switch (tribe) {
 			case "테란":
 				return new Terran();
+			case "프로토스":
+				return new Protos();
+			case "저그":
+				return new Zerg();
 		}
 
 		return null;

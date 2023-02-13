@@ -1,4 +1,4 @@
-package app.tribe;
+package app.tribes;
 
 public abstract class Tribe {
 

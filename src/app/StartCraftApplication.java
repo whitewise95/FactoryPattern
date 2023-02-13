@@ -1,7 +1,7 @@
 package app;
 
-import app.factory.TribeFactory;
-import app.tribe.Tribe;
+import app.factorys.TribeFactory;
+import app.tribes.Tribe;
 import java.util.Scanner;
 
 public class StartCraftApplication {
@@ -23,7 +23,6 @@ public class StartCraftApplication {
 		System.out.println("종족을 선택해주세요.");
 		System.out.println("테란,  저그,  프로토스");
 		String answer = scanner.next();
-		Tribe tribe = null;
 		if (answer.equals("테란") || answer.equals("저그") || answer.equals("프로토스")) {
 			return tribeFactory.getTribe(answer);
 		} else {
