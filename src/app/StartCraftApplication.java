@@ -12,6 +12,31 @@ public class StartCraftApplication {
 	public static void main(String[] args) {
 		Tribe tribe = tribeChoose();
 		startPrint(tribe);
+		while (true) {
+			inGame(tribe);
+		}
+	}
+
+	/**
+	 * 인게임
+	 */
+	public static void inGame(Tribe tribe) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("행동을 선택해주세요.");
+		System.out.println("1. 미네랄캐기  2.상태보기  3.건물짓기");
+		int answer = scanner.nextInt();
+
+		switch (answer) {
+			case 1 -> {
+
+			}
+			case 2 -> {
+
+			}
+			case 3 -> {
+
+			}
+		}
 	}
 
 	/**
@@ -37,6 +62,10 @@ public class StartCraftApplication {
 	public static void startPrint(Tribe tribe) {
 		try {
 			System.out.println(tribe.getName() + "을 선택하셨습니다.");
+			Thread.sleep(500);
+			System.out.println("게임 설명");
+			System.out.println("1.10단계까지 웨이브가 있으며  자원을 모으고 병력을 모아 전부 막아내면 됩니다.");
+			Thread.sleep(2000);
 			System.out.println(" 게임 3초후 시작");
 			Thread.sleep(1000);
 			System.out.println(" 1.......");
@@ -44,6 +73,7 @@ public class StartCraftApplication {
 			System.out.println(" 2.......");
 			Thread.sleep(1000);
 			System.out.println(" 3.......");
+
 		} catch (Exception e) {
 			throw new RuntimeException("네트워크 에러 다시 시작해주세요.");
 		}
