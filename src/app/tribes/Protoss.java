@@ -1,6 +1,6 @@
 package app.tribes;
 
-public class Protos extends Tribe {
+public class Protoss extends Tribe {
 
 	/**
 	 * 미네랄
@@ -32,7 +32,7 @@ public class Protos extends Tribe {
 	 */
 	private String name;
 
-	public Protos() {
+	public Protoss() {
 		this.mineral = 0;
 		this.gas = 0;
 		this.currentPopulation = 4;
@@ -79,6 +79,10 @@ public class Protos extends Tribe {
 	@Override
 	public Integer getWorkmanCnt() {
 		return this.workmanCnt;
+	}
+
+	@Override
+	public void setWorkmanCnt() {
 	}
 
 	@Override

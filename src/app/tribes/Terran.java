@@ -42,11 +42,6 @@ public class Terran extends Tribe {
 	}
 
 	@Override
-	void makingMineral() {
-
-	}
-
-	@Override
 	void makingGax() {
 
 	}
@@ -82,7 +77,18 @@ public class Terran extends Tribe {
 	}
 
 	@Override
+	public void setWorkmanCnt() {
+		this.workmanCnt += 1;
+		makingMineral();
+	}
+
+	@Override
 	public String getName() {
 		return name;
+	}
+
+	@Override
+	void makingMineral() {
+
 	}
 }

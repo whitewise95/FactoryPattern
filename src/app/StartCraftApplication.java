@@ -22,19 +22,18 @@ public class StartCraftApplication {
 	 */
 	public static void inGame(Tribe tribe) {
 		Scanner scanner = new Scanner(System.in);
+		System.out.println("미네랄 캐기는 자동으로 진행합니다. 일꾼 개당 10초에 8미네랄씩 캘 수 있습니다.");
 		System.out.println("행동을 선택해주세요.");
-		System.out.println("1. 미네랄캐기  2.상태보기  3.건물짓기");
+		System.out.println("1. 상태보기  2. 건물짓기  3.유닛생성");
 		int answer = scanner.nextInt();
 
 		switch (answer) {
 			case 1 -> {
-
 			}
 			case 2 -> {
 
 			}
 			case 3 -> {
-
 			}
 		}
 	}

@@ -81,6 +81,10 @@ public class Zerg extends Tribe{
 	}
 
 	@Override
+	public void setWorkmanCnt() {
+	}
+
+	@Override
 	public String getName() {
 		return this.name;
 	}

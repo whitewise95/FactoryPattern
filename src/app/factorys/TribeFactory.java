@@ -1,6 +1,6 @@
 package app.factorys;
 
-import app.tribes.Protos;
+import app.tribes.Protoss;
 import app.tribes.Terran;
 import app.tribes.Tribe;
 import app.tribes.Zerg;
@@ -16,7 +16,7 @@ public class TribeFactory {
 			case "테란":
 				return new Terran();
 			case "프로토스":
-				return new Protos();
+				return new Protoss();
 			case "저그":
 				return new Zerg();
 		}

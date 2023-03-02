@@ -7,6 +7,7 @@ public abstract class Tribe {
 	public abstract Integer getCurrentPopulation();
 	public abstract Integer getMaxPopulation();
 	public abstract Integer getWorkmanCnt();
+	public abstract void setWorkmanCnt();
 	public abstract String getName();
 
 	/**
